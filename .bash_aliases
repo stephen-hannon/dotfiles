@@ -14,5 +14,5 @@ alias gg="git grep --context 1 --line-number --heading --break"
 
 alias st1="ssh shannon3@student01.cse.nd.edu"
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
