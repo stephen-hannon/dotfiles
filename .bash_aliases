@@ -3,6 +3,7 @@ alias ll="ls -l"
 alias g="git"
 alias gs="git status"
 alias gd="git diff"
+alias gds="git diff --staged"
 alias gf="git fetch"
 alias gp="git push"
 alias gr="git rebase"
@@ -13,5 +14,5 @@ alias gg="git grep --context 1 --line-number --heading --break"
 
 alias st1="ssh shannon3@student01.cse.nd.edu"
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 

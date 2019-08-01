@@ -1,9 +1,10 @@
 syntax on
 set background=dark
 "colorscheme solarized
-colorscheme koehler
+colorscheme slate
 
 set number
+noremap <silent> <C-L> :set relativenumber!<cr>
 
 filetype indent on
 set shiftwidth=4
@@ -24,8 +25,9 @@ set cursorline
 " Ctrl-J for navigation between splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+
+" alias :tabnew to :TN
+command -nargs=1 -complete=file TN tabnew <args>
 
 set incsearch
 set hlsearch
