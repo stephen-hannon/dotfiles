@@ -1,6 +1,7 @@
 syntax on
 set background=dark
 "colorscheme solarized
+"colorscheme koehler
 colorscheme slate
 
 set number
@@ -20,14 +21,21 @@ set bs=indent,eol,start
 
 set mouse=v
 
-set cursorline
-
 " Ctrl-J for navigation between splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 
+" Remap Y to match behavior of C and D
+nnoremap Y y$
+
+nnoremap <silent> <leader><cr> :noh<cr>
+
 " alias :tabnew to :TN
 command -nargs=1 -complete=file TN tabnew <args>
+
+" hide cursorline when in insert mode
+autocmd InsertEnter * set nocursorline
+autocmd InsertLeave * set cursorline
 
 set incsearch
 set hlsearch
