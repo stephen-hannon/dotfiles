@@ -1,4 +1,7 @@
 alias ll="ls -l"
+alias rm="rm -Iv"
+alias cp="cp -v"
+alias mv="mv -v"
 
 alias g="git"
 alias gs="git status"
