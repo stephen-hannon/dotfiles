@@ -19,8 +19,6 @@ set ignorecase
 set smartcase
 set bs=indent,eol,start
 
-set mouse=v
-
 " Ctrl-J for navigation between splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -31,11 +29,14 @@ nnoremap Y y$
 nnoremap <silent> <leader><cr> :noh<cr>
 
 " alias :tabnew to :TN
-command -nargs=1 -complete=file TN tabnew <args>
+command -nargs=? -complete=file TN tabnew <args>
 
 " hide cursorline when in insert mode
+set cursorline
 autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
+
+autocmd BufNewFile answers.json set paste
 
 set incsearch
 set hlsearch
