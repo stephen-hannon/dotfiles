@@ -16,7 +16,9 @@ alias gra="git rebase --abort"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset %s' --abbrev-commit"
 alias gg="git grep --context 1 --line-number --heading --break"
 
-alias st1="ssh shannon3@student01.cse.nd.edu"
+for i in 0 1 2 4 5 6; do
+	alias st$i="ssh shannon3@student0$i.cse.nd.edu"
+done
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
