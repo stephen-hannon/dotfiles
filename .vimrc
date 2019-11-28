@@ -43,6 +43,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
+let g:netrw_liststyle = 3 " make netrw directory listing more like a tree
+
 set title
 
 set laststatus=2
