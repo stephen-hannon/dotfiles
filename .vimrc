@@ -48,6 +48,9 @@ let g:netrw_liststyle = 3 " make netrw directory listing more like a tree
 " strip current function
 nnoremap <leader>s diw%x<C-O>x
 
+" show tabs and trailing spaces
+set list listchars=tab:│\ ,trail:·
+
 set title
 
 set laststatus=2
