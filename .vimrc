@@ -29,14 +29,16 @@ nnoremap Y y$
 nnoremap <silent> <leader><cr> :noh<cr>
 
 " alias :tabnew to :TN
-command -nargs=? -complete=file TN tabnew <args>
+command! -nargs=? -complete=file TN tabnew <args>
 
-" hide cursorline when in insert mode
 set cursorline
-autocmd InsertEnter * set nocursorline
-autocmd InsertLeave * set cursorline
+" Dark gray cursor line
+highlight CursorLine term=bold cterm=bold guibg=Gray27 ctermbg=238
+" hide cursorline when in insert mode
+autocmd! InsertEnter * set nocursorline
+autocmd! InsertLeave * set cursorline
 
-autocmd BufNewFile answers.json set paste
+autocmd! BufNewFile answers.json set paste
 
 set incsearch
 set hlsearch
