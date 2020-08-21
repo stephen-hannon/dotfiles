@@ -69,8 +69,10 @@ export PATH=~/.npm-global/bin:$PATH
 # Source other files
 for file in\
 	~/.bash_aliases\
+	~/.git-prompt.sh\
 	/etc/bash_completion\
-	/etc/bash_completion.d/git-prompt
+	/etc/bash_completion.d/git-prompt\
+	/etc/bash_completion.d/git
 do
 	if [ -f $file ]; then
 		. $file
