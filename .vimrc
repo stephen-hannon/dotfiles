@@ -40,6 +40,8 @@ autocmd! InsertLeave * set cursorline
 
 autocmd! BufNewFile answers.json set paste
 
+autocmd FileType rust setlocal tabstop=4 shiftwidth=4 expandtab
+
 set incsearch
 set hlsearch
 set ignorecase
