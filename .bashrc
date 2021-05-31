@@ -72,7 +72,7 @@ for file in\
 	~/.git-prompt.sh\
 	/etc/bash_completion\
 	/etc/bash_completion.d/git-prompt\
-	/etc/bash_completion.d/git
+	/etc/bash_completion.d/git\
 	/usr/share/git/completion/git-completion.bash\
 	/usr/share/git/git-prompt.sh
 do
