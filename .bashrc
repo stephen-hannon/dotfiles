@@ -73,6 +73,8 @@ for file in\
 	/etc/bash_completion\
 	/etc/bash_completion.d/git-prompt\
 	/etc/bash_completion.d/git
+	/usr/share/git/completion/git-completion.bash\
+	/usr/share/git/git-prompt.sh
 do
 	if [ -f $file ]; then
 		. $file
